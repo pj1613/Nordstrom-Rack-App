@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f8d591f179.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nordstrom Rack: Shop Clothes, Shoes, Jewelry, Beauty and Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./styles/footerStyles.css" />
+    <link rel="stylesheet" href="./styles/navStyle.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <div id="navContainer"></div>
+    <div id="ha">
+      <h1 id="head">More to Rack, easier and faster.</h1>
+      <a href="signin.html">
+        <button id="sign">Sign In or Create an Account</button>
+      </a>
+      <p id="msg"></p>
+    </div>
+
+    <!-- Dads Gift Card -->
+
+    <div id="gift">
+      <a href="https://rack.giftcard.nordstrom.com/store/recipient?locale=en-us"
+        ><img
+          id="rh"
+          src="	https://n.nordstrommedia.com/id/9e22d9f7-3c96-4946-aa3c-8dad07562b84.jpeg?h=200&w=1608"
+          alt="black"
+        />
+      </a>
+
+      <div id="re">
+        <p>Online only. Ends June 19 at 11:59pm ET. Restrictions apply.</p>
+      </div>
+      <div id="rf">
+        <a
+          id="rg"
+          href="https://rack.giftcard.nordstrom.com/store/recipient?locale=en-us"
+          ><span>Shop Gift Cards &amp; See Restrictions</span></a
+        >
+      </div>
+    </div>
+
+    <!-- Slider -->
+
+    <div id="slide">
+      <figure>
+        <a
+          href="https://www.nordstromrack.com/s/love-by-design-one-shoulder-body-con-midi-dress/5994702"
+        >
+          <img
+            src="	https://n.nordstrommedia.com/id/684ef2e6-362c-49da-9a87-6b2421c00afc.jpeg?h=720&w=1608"
+            alt=""
+          />
+        </a>
+
+        <a href="https://www.nordstromrack.com/promo/fathers-day-gifts">
+          <img
+            src="https://n.nordstrommedia.com/id/88a5efc6-c3b9-4b31-9a19-01445ff9190b.jpeg?h=720&w=1608"
+            alt=""
+          />
+        </a>
+        <a
+          href="https://www.nordstromrack.com/brands/nike?campaign=nikeexception"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/8c581ec3-f7eb-49ac-9ba3-436c2f419ae4.jpeg?h=720&w=1608"
+            alt=""
+          />
+        </a>
+      </figure>
+    </div>
+    <br /><br /><br />
+
+    <!-- Flicity -->
+
+    <!-- Flickity HTML init -->
+    <!-- <div class="carousel" data-flickity='{ "groupCells": true }'>
+  <div class="carousel-cell"><a href="https://www.nordstromrack.com/events/1009035"><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt=""></a><img src="https://n.nordstrommedia.com/id/8c581ec3-f7eb-49ac-9ba3-436c2f419ae4.jpeg?h=720&w=1608" alt=""><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt="" height="75%" width="40px" ></div>
+  <div class="carousel-cell"><a href="https://www.nordstromrack.com/events/1009035"><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt=""></a><img src="https://n.nordstrommedia.com/id/8c581ec3-f7eb-49ac-9ba3-436c2f419ae4.jpeg?h=720&w=1608" alt=""><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt="" height="75%" width="40px" ></div>
+  <div class="carousel-cell"><a href="https://www.nordstromrack.com/events/1009035"><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt=""></a><img src="https://n.nordstrommedia.com/id/8c581ec3-f7eb-49ac-9ba3-436c2f419ae4.jpeg?h=720&w=1608" alt=""><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt="" height="75%" width="40px" ></div>
+  <div class="carousel-cell"><a href="https://www.nordstromrack.com/events/1009035"><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt=""></a><img src="https://n.nordstrommedia.com/id/8c581ec3-f7eb-49ac-9ba3-436c2f419ae4.jpeg?h=720&w=1608" alt=""><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt="" height="75%" width="40px" ></div>
+  <div class="carousel-cell"><a href="https://www.nordstromrack.com/events/1009035"><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt=""></a><img src="https://n.nordstrommedia.com/id/8c581ec3-f7eb-49ac-9ba3-436c2f419ae4.jpeg?h=720&w=1608" alt=""><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt="" height="75%" width="40px" ></div>
+  <div class="carousel-cell"><a href="https://www.nordstromrack.com/events/1009035"><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt=""></a><img src="https://n.nordstrommedia.com/id/8c581ec3-f7eb-49ac-9ba3-436c2f419ae4.jpeg?h=720&w=1608" alt=""><img src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224" alt="" height="75%" width="40px" ></div>
+</div> -->
+
+    <h1 id="h">Here Today, Gone in a Flash</h1>
+    <div id="ab">
+      <div>
+        <a href="https://www.nordstromrack.com/events/1009035">
+          <img
+            src="https://n.nordstrommedia.com/id/fb3dc9ca-3182-4384-bede-322e221a7a37.jpeg?h=1224&w=1224"
+            alt=""
+        /></a>
+        <h3>Natori & Wacoal Up to 60% Off</h3>
+        <p>Event ends in 2 days, 3 hours, and 37 minutes</p>
+      </div>
+      <div>
+        <a href="https://www.nordstromrack.com/events/1009690">
+          <img
+            src="https://n.nordstrommedia.com/id/f83efb71-e544-4581-bac6-e6eabd701b44.jpeg?h=1224&w=1224"
+            alt=""
+        /></a>
+        <h3>Summer Shoe Trends Feat. Dolce Vita</h3>
+        <p>Event ends in 2 days, 3 hours, and 37 minutes</p>
+      </div>
+      <div>
+        <a href="https://www.nordstromrack.com/events/1009116">
+          <img
+            src="https://n.nordstrommedia.com/id/eb5b999d-9040-436b-8b79-20976721895a.jpeg?h=1224&w=1224"
+            alt=""
+        /></a>
+        <h3>Calvin Klein Up to 60% Off</h3>
+        <p>Event ends in 2 days, 3 hours, and 22 minutes</p>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------- -->
+
+    <h1 id="h">Wear on Repeat</h1>
+    <div id="abc">
+      <div>
+        <a
+          href="https://www.nordstromrack.com/shop/Women/Clothing/Tops?breadcrumb=Home%2FWomen%2FClothing%2FTops&origin=topnav&filterByPrice=0-25&filterByPrice=25-50&campaign=wtopsunder50"
+          ><img
+            src="https://n.nordstrommedia.com/id/a0dd02d9-eec6-4fb5-8944-8de326bf7b58.jpeg?h=555&w=804"
+            alt=""
+        /></a>
+        <h3>Tops & Shorts Under $50</h3>
+        <p>From Melrose and Market, BP., Abound and more.</p>
+        <a id="a" href="">Women's Tops</a>
+        <a id="a" href="">Women's Shorts</a>
+      </div>
+      <div>
+        <a
+          href="https://www.nordstromrack.com/shop/Women/Handbags?campaign=allhandbags"
+          ><img
+            src="https://n.nordstrommedia.com/id/9d58aaf1-a787-4e55-aa4d-928afa6beb5c.jpeg?h=555&w=804"
+            alt=""
+        /></a>
+        <h3>HOUSE OF WANT, Marc Jacobs & More</h3>
+        <p>Bright bags for summer? Yes.</p>
+        <a
+          id="a"
+          href="https://www.nordstromrack.com/shop/Women/Handbags?campaign=allhandbags"
+          >Handbags</a
+        >
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------- -->
+
+    <h1 id="t">Trending now</h1>
+    <div id="rv">
+      <div id="rx">
+        <img
+          id="rw"
+          src="https://n.nordstrommedia.com/id/sr3/4560b0c8-10cf-48bc-855c-9423eb87eb08.jpeg?q=45&dpr=2&h=365.31&w=230"
+          alt=""
+        />
+        <br />
+        <span>Nautica</span>
+        <br />
+        <span><strong>$104.96</strong> (64% off)</span>
+        <br />
+        <span id="ro">$38</span>
+        <br />
+        <i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star"></i> <span>(606)</span>
+      </div>
+      <div id="rx">
+        <img
+          id="rw"
+          src="https://n.nordstrommedia.com/id/sr3/7177bb1f-2484-47d3-ab82-ff09e00b6eae.jpeg?q=45&dpr=2&h=365.31&w=230"
+          alt=""
+        />
+        <br />
+        <span>BergHOFF</span>
+        <br />
+        <span><strong>$99.97</strong> (80% off)</span>
+        <br />
+        <span id="ro">$500.00</span>
+        <br />
+        <i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star"></i> <span>(606)</span>
+      </div>
+      <div id="rx">
+        <img
+          id="rw"
+          src="https://n.nordstrommedia.com/id/sr3/dcf4ab06-8cb3-4f56-a217-582035569e49.jpeg?q=45&dpr=2&h=365.31&w=230"
+          alt=""
+        />
+        <br />
+        <span>BENTGO</span>
+        <br />
+        <span><strong>$49.97</strong> (16% off)</span>
+        <br />
+        <span id="ro">$59.99</span>
+        <br />
+        <i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star"></i> <span>(166)</span>
+      </div>
+      <div id="rx">
+        <img
+          id="rw"
+          src="https://n.nordstrommedia.com/id/sr3/29e3716e-e98a-41aa-b433-3da61c0bb669.jpeg?q=45&dpr=2&h=365.31&w=230"
+          alt=""
+        />
+        <br />
+        <span>Hydro Flask</span>
+        <br />
+        <span><strong>$29.97</strong> (24% off)</span>
+        <br />
+        <span id="ro">$39.95</span>
+        <br />
+        <i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star"></i> <span>(165)</span>
+      </div>
+      <div id="rx">
+        <img
+          id="rw"
+          src="https://n.nordstrommedia.com/id/sr3/777583e7-508d-408f-bdbd-5313c023a91e.jpeg?q=45&dpr=2&h=365.31&w=230"
+          alt=""
+        />
+        <br />
+        <span>ASTR the Label</span>
+        <br />
+        <span><strong>$49.97</strong> (49% off)</span>
+        <br />
+        <span id="ro">$99.00</span>
+        <br />
+        <i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star kk"></i><i class="fa-solid fa-star kk"></i
+        ><i class="fa-solid fa-star"></i> <span>(94)</span>
+      </div>
+    </div>
+
+    <div id="gift">
+      <a href="https://www.nordstromrack.com/promo/fathers-day-gifts"
+        ><img
+          id="rh"
+          src="https://n.nordstrommedia.com/id/feb758c1-77d8-4a62-a023-90408eb69e34.jpeg?h=200&w=1608"
+          alt="black"
+        />
+      </a>
+
+      <div id="fr">
+        <h4 id="p">Father's Day is Sunday, June 19</h4>
+        <p id="p1">Pick the shipping method that works best for you.</p>
+      </div>
+      <div id="dm">
+        <a href="https://www.nordstromrack.com/promo/fathers-day-gifts"
+          >The Father's Day Gift Shop</a
+        >
+        <a href="https://stores.nordstromrack.com/search">Find Your Store</a>
+        <a href="https://www.nordstromrack.com/promo/gift-card-info"
+          >Gift Cards</a
+        >
+      </div>
+    </div>
+
+    <!---------------------------- Women's White Clothing & More ---------------------->
+
+    <div id="wo">
+      <div>
+        <h3>Women's White</h3>
+        <h3>Clothing & More</h3>
+        <br />
+        <a
+          href="https://www.nordstromrack.com/c/women/wedding-shop/bridal?campaign=bridal"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/8215da80-d860-4343-a3d0-307babe46273.jpeg?h=369&w=240"
+            alt=""
+          />
+        </a>
+        <br />
+        <a
+          id="l"
+          href="https://www.nordstromrack.com/c/women/wedding-shop/bridal?campaign=bridal"
+          >Women's White</a
+        >
+        <br />
+        <a
+          id="l"
+          href="https://www.nordstromrack.com/c/women/wedding-shop/bridal?campaign=bridal"
+          >Clothing & More</a
+        >
+      </div>
+      <div>
+        <p id="w">Mother of the Bride</p>
+        <br />
+        <a
+          href="https://www.nordstromrack.com/s/love-by-design-rina-dotted-chiffon-lace-trim-dress/6123804?campaign=bridal&cid=&cm_sp=&origin=&placement=str&position=0"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/46cb6de8-ab67-4d68-8e43-16dbdd156340.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
+            alt=""
+          />
+        </a>
+        <p>Love By Design</p>
+        <br />
+        <p><b>$54.99</b>(43% off)</p>
+        <p>$98.00</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(10)</span>
+      </div>
+      <div>
+        <p id="w">Bridesmaid</p>
+        <br />
+        <a
+          href="https://www.nordstromrack.com/s/meghan-la-aphrodite-maxi-dress/6095171?campaign=bridal&cid=&cm_sp=&origin=&placement=str&position=1"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/675c4b4e-8cc0-4778-9630-a1ed689cafc3.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
+            alt=""
+          />
+        </a>
+        <p>ASTR the Lable</p>
+        <br />
+        <p><b>$52.97</b>(55% off)</p>
+        <p>$118.00</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(2)</span>
+      </div>
+      <div>
+        <p id="w">Womesn's Shoes</p>
+        <br />
+        <a
+          href="https://www.nordstromrack.com/s/marina-off-the-shoulder-scuba-crepe-dress/6061317?campaign=bridal&cid=&cm_sp=&origin=&placement=str&position=2"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/8d0e906c-ced2-4c89-94ea-137a635e3a7c.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
+            alt=""
+          />
+        </a>
+        <p>ASTR the Lable</p>
+        <br />
+        <p><b>$69.97</b>(60% off)</p>
+        <p>$175.00</p>
+        <br />
+      </div>
+      <div>
+        <p id="w">Men's Suits, Shirts & Shoes</p>
+        <br />
+        <a
+          href="https://www.nordstromrack.com/s/area-stars-crystal-strap-asymmetric-cocktail-dress/6514359?campaign=bridal&cid=&cm_sp=&origin=&placement=str&position=3"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/bd1917a1-cad7-475e-8932-314a8b86e21e.jpeg?q=45&fit=fill&fm=jpg&dpr=2&h=408&w=266"
+            alt=""
+          />
+        </a>
+        <p>MEGHAN LA</p>
+        <br />
+        <p><b>$99.97</b>(22% off)</p>
+        <p>$129.00</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(25)</span>
+      </div>
+    </div>
+
+    <!-- ---------------------------More to Explore-------------------------------- -->
+
+    <h1 id="h">More to Explore</h1>
+    <div id="ab">
+      <div>
+        <a
+          href="https://www.nordstromrack.com/c/women/shoes/sneakers/athletic?campaign=wactivesneakers"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/9456cb86-80f8-44a8-8217-2f3cd48bdfe5.jpeg?h=501&w=536"
+            alt=""
+        /></a>
+        <h3>Sneakers from $50</h3>
+        <p>From New Balance, ASICS and more.</p>
+        <a
+          id="aa"
+          href="https://www.nordstromrack.com/c/women/shoes/sneakers/athletic?campaign=wactivesneakers"
+          >Women's Active Sneakers</a
+        >
+        <a
+          id="aa"
+          href="https://www.nordstromrack.com/c/men/shoes/sneakers/athletic?campaign=mactivesneakers"
+          >Men's Active Sneakers</a
+        >
+      </div>
+      <div>
+        <a href="https://www.nordstromrack.com/brands/ciate">
+          <img
+            src="https://n.nordstrommedia.com/id/bac9e13b-caa8-4b8b-ba2f-d1d58ad7d7d2.jpeg?h=501&w=536"
+            alt=""
+        /></a>
+        <h3>Ciaté & More</h3>
+        <p>That just-in-from-the-beach glow? Here's how it's done.</p>
+        <a id="aa" href="https://www.nordstromrack.com/brands/ciate">Ciaté</a>
+        <a id="aa" href="https://www.nordstromrack.com/shop/Beauty/Skin%20Care"
+          >Skin Care</a
+        >
+        <a
+          id="aa"
+          href="https://www.nordstromrack.com/shop/Beauty/Skin%20Care/Sunscreen"
+          >Sun Care</a
+        >
+      </div>
+      <div>
+        <a
+          href="https://www.nordstromrack.com/c/home/dining-and-entertaining?campaign=outdoorentertaining"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/0dc01585-a690-4082-b6ae-6a31bfbc5eb8.jpeg?h=501&w=536"
+            alt=""
+        /></a>
+        <h3>Outdoor Entertaining from $24.97</h3>
+        <p>For every warm-weather gathering.</p>
+        <a
+          id="aa"
+          href="https://www.nordstromrack.com/c/home/dining-and-entertaining?campaign=outdoorentertaining"
+          >Dining & Entertaining</a
+        >
+      </div>
+    </div>
+
+    <!-- ---------------------------Best-selling items-------------------------------- -->
+
+    <h1 id="b">Best-selling items</h1>
+    <div id="be">
+      <div>
+        <a href="">
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/8c76d9ed-b2ba-49a2-96d4-87d821309413.jpeg?q=45&dpr=2&h=365.31&w=230"
+            alt=""
+          />
+        </a>
+        <br />
+        <p id="bp">Lovestitch</p>
+        <br />
+        <h3 id="bh">$23.96 - $29.97</h3>
+        <p id="bh">(Up to 72% off select items)</p>
+        <p>$88.00</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(2382)</span>
+      </div>
+
+      <div>
+        <a href="">
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/b329620a-cebb-4cce-8101-870fa9fba062.jpeg?q=45&dpr=2&h=365.31&w=230"
+            alt=""
+          />
+        </a>
+        <h3 id="bh">New Markdown</h3>
+        <br />
+        <p id="bp">Madewell</p>
+        <br />
+        <h3 id="bh">$9.33 - $16.97</h3>
+        <p id="bh">(Up to 52% off select items)</p>
+        <p>$16.97 - $19.50</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(527)</span>
+      </div>
+
+      <div>
+        <a href="">
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/f03fda4e-cc49-446e-8f89-deeb9fa6cc01.jpeg?q=45&dpr=2&h=365.31&w=230"
+            alt=""
+          />
+        </a>
+        <p id="bp">MAC Cosmetics</p>
+        <br />
+        <h3 id="bh">$7.80 - $13.00</h3>
+        <p id="bh">(Up to 40% off select items)</p>
+        <p>$13.00</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(760)</span>
+      </div>
+
+      <div>
+        <a href="">
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/c231f0bd-ddbb-4557-8510-5d15c20b0295.jpeg?q=45&dpr=2&h=365.31&w=230"
+            alt=""
+          />
+        </a>
+        <p id="bp">Tommy Bahama</p>
+        <br />
+        <h3>$19.97</h3>
+        <p>$54.50</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(9)</span>
+      </div>
+
+      <div>
+        <a href="">
+          <img
+            src="https://n.nordstrommedia.com/id/sr3/6ddfacbb-cf1b-4b34-99ff-75b78c861e4f.jpeg?q=45&dpr=2&h=365.31&w=230"
+            alt=""
+          />
+        </a>
+        <p id="bp">Tommy Bahama</p>
+        <br />
+        <h3>$39.97 (59% off)</h3>
+        <p>$99.50</p>
+        <br />
+        <i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i
+        ><i class="fa-solid fa-star kk kk1"></i><i class="fa-solid fa-star"></i
+        ><span>(394)</span>
+      </div>
+    </div>
+
+    <!-- ---------------------------More to Know-------------------------------- -->
+
+    <h1 id="m">More to Know</h1>
+
+    <div id="mo">
+      <div>
+        <a href="https://www.nordstromrack.com/creditcard/entry?cc=RA1023">
+          <img
+            src="https://n.nordstrommedia.com/id/b696c8a3-f2e2-4738-bfdd-dcffba6ee55a.jpeg?h=188&w=402"
+            alt=""
+          />
+        </a>
+        <h3>An Exclusive Offer</h3>
+        <br />
+        <p>Just for new Nordstrom credit cardmembers. Restrictions apply.</p>
+        <br />
+        <a href="https://www.nordstromrack.com/creditcard/entry?cc=RA1023"
+          >Apply Now</a
+        >
+      </div>
+
+      <div>
+        <a href="https://www.nordstromrack.com/promo/diversity-at-nordstrom">
+          <img
+            src="https://n.nordstrommedia.com/id/bd0e1c8b-f6c0-4d46-899f-fc9d07e014ac.jpeg?h=188&w=402"
+            alt=""
+          />
+        </a>
+        <h3>Nordstrom Celebrates Pride</h3>
+        <br />
+        <p>
+          Join us as we celebrate, spotlight and give back to the LGBTQIA+
+          community.
+        </p>
+        <br />
+        <a href="https://www.nordstromrack.com/promo/diversity-at-nordstrom"
+          >Learn More</a
+        >
+      </div>
+
+      <div>
+        <a
+          href="https://www.nordstromrack.com/promo/nordy-podcast#anchor-link-listen"
+        >
+          <img
+            src="https://n.nordstrommedia.com/id/2961092c-5387-4c52-9c94-1379fe2ac7ec.jpeg?h=188&w=402"
+            alt=""
+          />
+        </a>
+        <h3>We Launched a Podcast!</h3>
+        <br />
+        <p>
+          Join Pete Nordstrom and special guests for a behind-the-scenes look at
+          Nordstrom.
+        </p>
+        <br />
+        <a
+          href="https://www.nordstromrack.com/promo/nordy-podcast#anchor-link-listen"
+          >Listen to All Episodes</a
+        >
+      </div>
+
+      <div>
+        <a href="https://www.nordstromrack.com/ship-return-policy">
+          <img
+            src="https://n.nordstrommedia.com/id/e071bbdf-e456-41a9-bed2-cd7974109afe.jpeg?h=188&w=402"
+            alt=""
+          />
+        </a>
+        <h3>
+          Shop online or on our app & pick up at Nordstrom Rack or Nordstrom.
+        </h3>
+        <br />
+        <a href="https://www.nordstromrack.com/ship-return-policy"
+          >Learn More</a
+        >
+      </div>
+    </div>
+
+    <!-- ---------------------------Rack Your Look-------------------------------- -->
+    <h2 id="ck">Rack Your Look</h2>
+    <p id="ck1">
+      Click your favorite photos to shop our Instagram, and use #nordstromrack
+      for a chance to be featured!
+    </p>
+    <div id="lo">
+      <div>
+        <img
+          src="https://cdn.dashhudson.com/media/640/1635798101.057760741882.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <img
+          src="https://cdn.dashhudson.com/media/640/1628598956.37983440346.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <img
+          src="https://cdn.dashhudson.com/media/640/1625812071.39856985243.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <img
+          src="https://cdn.dashhudson.com/media/640/1626312391.206982943516.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <img
+          src="https://cdn.dashhudson.com/media/640/1619542695.85628681795.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- ---------------------------Offers-------------------------------- -->
+    <div id="of">
+      <img
+        src="https://n.nordstrommedia.com/id/e63e8dd7-3537-47db-912c-7d370e63658f.jpeg?h=180&w=1600"
+        alt=""
+      />
+      <p id="off">
+        Sign up and be first to know about flash events, new markdowns, private
+        sales and more.<a href="">Sign Up</a>
+      </p>
+    </div>
+
+    <!-- ---------------------------Sign Up-------------------------------- -->
+    <div id="signup">
+      <h4>Get E-mail Updates:</h4>
+      <input type="email" id="mail" placeholder="  E-mail Address" required />
+      <button>Sign Up</button>
+    </div>
+
+    <!-- -------------------Footer------------------ -->
+    <footer>
+      <div id="sContainer"></div>
+    </footer>
+  </body>
+</html>
+<script src="./index.js"></script>
+
+<script src="./scripts/nav.js" type="module"></script>
+
+<script src="./scripts/foot.js" type="module"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (e) {
+    var p = document.getElementById("welcome_message");
+
+    if (localStorage.getItem("logeduser") != null) {
+      p.innerText =
+        "Welcome,\t" + JSON.parse(localStorage.getItem("logeduser")).fname;
+      document.getElementById("rc").style.display = "none";
+      var signout = document.getElementById("signout");
+      signout.style.display = "block";
+      signout.addEventListener("click", function (ev) {
+        localStorage.removeItem("logeduser");
+        document.location = "index.html";
+      });
+    }
+  });
+</script>
